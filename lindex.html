@@ -1,105 +1,602 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>login</title>
-        <style>
-            *{
-                margin: 0%;
-                padding: 0%;
-                box-sizing: border-box;
-            }
-            body{
-                min-height: 100vh;
-                background-color: #eee;
-                display: flex;
-                font-family: sans-serif;
-            }
-            .container{
-                margin: auto;
-                width: 500px;
-                max-width: 90%;
-
-            }
-            .container form{
-                width: 100%;
-                height: 100%;
-                padding: 20px;
-                background-color: white;
-                border-radius: 4px;
-                box-shadow: 0 8px 15px rgba(0,0,0,.3);
-            }
-            .container form .mujji{
-                text-align: center;
-                margin-bottom: 24px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 30px;
-                color: #222;
-            }
-            .container form .form-control{
-                width: 100%;
-                height: 40px;
-                background-color: white;
-                border-radius: 4px;
-                border: 1px solid silver;
-                margin: 10px 0 18px 0;
-                padding: 0 10px;
-            }
-            .container form .btn{
-                width: 80px;
-                margin-left: 190px;
-                 border: 1px solid #55557d;
-               color: #1c1c50;
-            font-weight: bold;
-             border-radius:2px ;
-              height: 4vh;
-         tansition: 0.5s ease;
-         cursor: pointer;
-            }
-           .container form .btn :hover{
-            color: rgb(202, 120, 13);
-           }
-                
-               /* transform: translateX(-50%);
-                width: 120px;
-                height: 34px;
-                border: none;
-                outline: none;
-                background:burlywood;
-                cursor: pointer;
-                text-transform: uppercase;
-                color: black;
-                border-radius: 4px;
-                transition: .3s;*/
-
-
-            
-            .container form .btn:hover{
-                opacity: .9;
-            }
-        </style>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecomerce website</title>
+    <link rel="shotcut icon" type="image" href="./logo5.png">
+    <link rel="stylesheet" href="style.css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!--boostsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymo">
     </head>
     <body>
-        <div class="container">
-            <form action="">
-                <div class="mujji">login</div>
-                <div class="form-group">
-                    <label for="">Email id</label>
-                    <input type="text" class="form-control" required>
+             <!--top nav--> 
+           <div class="top-navbar">
+            <div class="top-icons">
+              <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+           
+           </div>
+          <div class="other-links">
+            <button id="btn-login" style="margin-top: 10px;"><a href="C:/Users/mujjamil/OneDrive/Documents/new%20project/ecommerce/index%20(2).html" >Login</a></button>
+            <button id="btn-signup"><a href="signup-html">Sign up</a></button>
 
-             </div>
-             <form action="">
-                <div class="form-group">
-                    <label for="">password</label>
-                    <input type="password" class="form-control" required>
-                    </div>
+           
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          </div>
+          <!--navbar boostsrap-->
+          <nav class="navbar navbar-expand-lg" id="nav-bar">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; margin-left: 20px; font-size: x-large;" > Ilife fashion <img src="" alt="" width="70px" ></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+              </button>
+           
+            </ul>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                     
-                    <button class="btn" type="button" name="button" onclick="snitch()" >Subscribe</button>
-            </form>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Product.html">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="Services.html">Services</a>
+                    </li>
+                    <a class="nav-link" href="Shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Pages.html">Pages</a>
+                  </li>
+                 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Category
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#1c1c50;">
+                      <li><a class="dropdown-item" href="new.html">New Arrevies</a></li>
+                      <li><a class="dropdown-item" href="best.html">Best Selling</a></li>
+                      <li><a class="dropdown-item" href="accessoris.html">ACCESSORIES</a></li>
+                      <li><a class="dropdown-item" href="top.html">Top 80 offers</a></li>
+                      <li><a class="dropdown-item" href="sunglass.html">Sunglass</a></li>
+                      <li><a class="dropdown-item" href="wstch.html">Watch</a></li>
+                      <li><a class="dropdown-item" href="men.html">Men's Product</a></li>
+                      <li><a class="dropdown-item" href="ladies.html">Ladies</a></li>
+                      <li><a class="dropdown-item" href="westrn.html">Westrn Dress</a></li>
+                      <li><a class="dropdown-item" href="denim.html">Denim</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" style="background-color:#1c1c50;">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+                
+         <!--navbar-->
+        <!---home-->
+            <section class="home" style="background-color: #a9a9a926;">
+              <div class="contact"> 
+               <h3>up to  50% sale 
+               <br><span>Shirt for men</span>
+              </h3>
+                <p>Maboriosam in a nesciung eget magnae
+                  <br>Dapibus disting tloctio in the find it pereri</br>
+                  odiy maboriosm.</p>
+                  <button id="shopnow">shop now!</button>
+                </div>
+                  <div class="img">
+                   <img src="r1.png" alt="">
+                  </div>
+              
+               
+            </section>
+                 <!---home-->
+                </div>
+                 <!--card-->
+                 <div class="container" id="top-cards">
+                  <div class="row">
+                    <div class="col-md-5 py-3 py-md-0">
+                         <div class="card" style="background-color: #a9a9a926;">
+                          <img src="./img0.png" alt="">
+                          <div class="card-img-overlay">
+                            <h5 class="card-titel">Men's Collection</h5>
+                            <p>Summer travel collection</p>
+                            <button class="btn" type="button" name="button" onclick="snitch()" >Shop Now</button>
+                          </div>
+                    </div>
+                    </div>
+                  
+                 
+
+                 <div class="col-md-4 py-3 py-md-0">
+                  <div class="card" style="background-color: #a9a9a926;">
+                   <img src="./r3.png" alt="">
+                   <div class="card-img-overlay">
+                     <h5 class="card-titel">Bag collection</h5>
+                     <p>Awesome bag</p>
+                     <button class="btn" type="button" name="button" onclick="snitch()" >Shop Now</button>
+                   </div>
+             </div>
+             </div>
+             <div class="col-md-3 py-3 py-md-0">
+              <div class="card" style="background-color: #a9a9a926;">
+               <img src="r4.png" alt="">
+               <div class="card-img-overlay">
+                 <h5 class="card-titel">Flash Sale </h5>
+                 <p>Mid Seation Up to 40% Off</p>
+                 <button class="btn" type="button" name="button" onclick="snitch()" >Shop Now</button>
+               </div>
+         </div>
+         </div>
         </div>
+         
+    <!--trending-->
+    <div class="mujj">TRENDING ITEMS</div>
+     
+ <!--home contact-->
+            
+         <div id="nav-link">
+          <ul>
+            <li><a href="#">MEN'S</a> </li>
+            <li><a href="#">WOMEN</a> </li>
+            <li><a href="#">KID'S</a> </li>
+            <li><a href="#">ACCESSORIES</a> </li>
+            <li><a href="#">ESSENTIAL</a> </li>
+            <li><a href="#">PRICES</a> </li>
+
+          </ul>
+          </div>
+         
+ 
+    
+    
+     <!---add to card-->
+     <div class="contianer" id="product-cards">
+      <div class="row" style="margin-top: 30px;">
+      <div class="col-md-3 py-2 py-md-0">
+        <div class="card">
+          <img src="r5.png" alt="">
+          <div class="card-body">
+            <h3>ADD TO CART</h3>
+            <div class="star">
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-signal"></i>
+            </div>
+            <h5>women hot collections</h5>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-3 py-4 py-md-0">
+              <div class="card">
+                <img src="r6.png" alt="">
+                <div class="card-body">
+                  <h3>ADD TO CARD</h3>
+                  <div class="star">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-signal"></i>
+                    
+                  </div>
+                  <h5>awesome pink show</h5>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                      <img src="r7.png" alt="">
+                      <div class="card-body">
+                        <h3>ADD TO CARD</h3>
+                        <div class="star">
+                          <i class="fa-solid fa-eye"></i>
+                          <i class="fa-regular fa-heart"></i>
+                          <i class="fa-solid fa-signal"></i>
+                        </div>
+                        <h5>awesome bag collections</h5>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-md-3 py-3 py-md-0">
+                          <div class="card">
+                            <img src="r8.png" alt="">
+                            <div class="card-body">
+                              <h3>ADD TO CARD</h3>
+                              <div class="star">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-signal"></i>
+                              </div>
+                              <h5>women pat collections</h5>
+                              </div>
+                              </div>
+                              </div>
+            </div>
+            
+          </div>
+        
+          <div class="contianer" id="product-cards">
+            <div class="row" style="margin-top: 30px;">
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <img src="r9.png" alt="">
+                <div class="card-body">
+                  <h3>ADD TO CARD</h3>
+                  <div class="star">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-signal"></i>
+                  </div>
+                  <h5>awesome bags collections</h5>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                      <img src="r10.png" alt="">
+                      <div class="card-body">
+                        <h3>ADD TO CAR</h3>
+                        <div class="star">
+                          <i class="fa-solid fa-eye"></i>
+                          <i class="fa-regular fa-heart"></i>
+                          <i class="fa-solid fa-signal"></i>
+                          
+                        </div>
+                        <h5>awesome cap collections</h5>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-md-3 py-3 py-md-0">
+                          <div class="card">
+                            <img src="t1.png" alt="">
+                            <div class="card-body">
+                              <h3>ADD TO CARD</h3>
+                              <div class="star">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-signal"></i>
+                              </div>
+                              <h5>polo dres for women</h5>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="col-md-3 py-3 py-md-0">
+                                <div class="card">
+                                  <img src="r11.png" alt="">
+                                  <div class="card-body">
+                                    <h3>ADD TO CARD</h3>
+                                    <div class="star">
+                                      <i class="fa-solid fa-eye"></i>
+                                      <i class="fa-regular fa-heart"></i>
+                                      <i class="fa-solid fa-signal"></i>
+                                    </div>
+                                    <h5>black sunclass for women</h5>
+                                    </div>
+                                    </div>
+                                    </div>
+                  </div>
+                  
+                </div>
+              
+          <!---banner-->
+            <div class="banner">
+              <div class="content">
+                <h6>Eshop Free Lite Version</h6>
+                <br>
+                <h1>Currently You Are Using Free<br>
+               Lite Version Of Eshop.</h1>
+               <br>
+               
+                 
+                  <h4>Please, purchase full version of the template to get all pages,<br>
+                   features and commercial license.</h4>
+                    <div id="bannerbtn"><button>purchase now</button></div>
+              </div>
+              
+            </div>
+          
+            <!--product card-->
+               <div class="container" id="product-cards">
+                <h1 class="text-center">On sale</h1>
+                <div class="row" style="margin-top: 40px;">
+                <div class="col-md-3 py-2  py-md-0">
+                  <div class="card" >
+                    <img src="g1.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;">
+                    <div class="card-body" >
+                      <h3 class="free" style="font-size: 20px ;">Licity jelly leg flat Sandals</h3>
+                     
+                      <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 50px;">$59</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 py-3 py-md-0">
+                  
+                  <div class="card" >
+                    <img src="rm2.png" alt="" style="height:36vh;width: 200px; margin-left: 30px;">
+                    <div class="card-body" >
+                     <h3 class="free" style="font-size: 20px ;">Licity jelly leg flat Sandals</h3>
+                     <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 50px;">$59</button>
+                    </div>
+                  </div>
+                </div>
+                
+
+                <div class="col-md-3 py-3 py-md-0">
+                  <div class="card" >
+                    <img src="rm3.png" alt="" style="height:36vh;width: 200px; margin-left: 30px;">
+                    <div class="card-body" >
+                       <h3 class="free" style="font-size: 20px ;">Licity jelly leg flat Sandals</h3>
+                       <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 50px;">$59</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 py-3 py-md-0">
+                  <div class="card" >
+                    <img src="rm4.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;"  >
+                    <div class="card-body">
+                       <h3 class="free" style="font-size: 20px ;">Licity jelly leg flat Sandals</h3>
+                       <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 50px;">$59</button>
+                    </div>
+                  </div>
+                </div>
+
+                </div>
+               </div>
+                  
+                  
+
+
+                 
+               <h1 class="text-center">Best sale</h1>
+               <div class="container" id="product-cards">
+                <div class="row" style="margin-top: 40px;">
+                <div class="col-md-3 py-3 py-md-0">
+                  <div class="card" >
+                    <img src="rp1.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;">
+                    <div class="card-body">
+                       <h3 class="free" style="font-size: 20px ;">Licity jelly leg flat Sandals</h3>
+                       <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 50px;">$59</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 py-3 py-md-0">
+                  <div class="card" >
+                    <img src="rp2.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;">
+                    <div class="card-body">
+                   <h3 class="free" style="font-size: 20px ;">Licity jelly leg flat Sandals</h3>
+                   <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 50px;">$59</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 py-3 py-md-0">
+                  <div class="card" >
+                    <img src="rp3.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;">
+                    <div class="card-body">
+                       <h3 class="free" style="font-size: 20px ;">Licity jelly leg flat Sandals</h3>
+                       <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 50px;">$59</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 py-3 py-md-0">
+                  <div class="card" >
+                    <img src="rp4.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;"  >
+                    <div class="card-body">
+                       <h3 class="free" style="font-size: 20px ;">Licity jelly leg flat Sandals</h3>
+                       <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 50px;">$59</button>
+                    </div>
+                  </div>
+                </div>
+
+                </div>
+               </div>
+                  
+               
+
+           <h1 class="text-center">To viewed</h1>
+           <div class="container" id="product- cards">
+            <div class="row" style="margin-top: 40px;">
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card" >
+                <img src="ry1.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;">
+                <div class="card-body">
+                  <h3 class="free" style="font-size: 20px;">Licity jelly leg flat Sandals</h3>
+                  <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 50px;">$59</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card" >
+                <img src="ry2.png" alt="" style="height:36vh;width: 200px; margin-left: 30px;">
+                <div class="card-body">
+                  <h3 class="free" style="font-size: 20px;">Licity jelly leg flat Sandals</h3>
+                  <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 50px;">$59</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 py-4 py-md-0">
+              <div class="card" >
+                <img src="ry3.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;">
+                <div class="card-body">
+                  <h3 class="free" style="font-size: 20px;">Licity jelly leg flat Sandals</h3>
+                  <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 50px;">$59</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card" >
+                <img src="ry4.png" alt="" style="height:36vh;width: 200px; margin-left: 30px;" >
+                <div class="card-body">
+                  <h3 class="free" style="font-size: 20px;">Licity jelly leg flat Sandals</h3>
+                  <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 50px;">$59</button>
+                </div>
+              </div>
+            </div>
+
+            </div>
+           </div>
+              
+           
+           <!--blog-->
+           <h1 class="text-center" style="margin-bottom: 20px;" > Form Our Blog</h1>
+            <div class="container" id="top-cards" >
+              <div class="row">
+                <div class="col-md-4 py-3 py-md-0">
+                     <div class="card" style="background-color: #a9a9a926;">
+                      <img src="m1.jpg" alt="">
+                      <div class="card-body">
+                        <h5 class="card-titel">22 July , 2020. Monday</h5>
+                        <p>Summer travel collection</p>
+                        
+                      </div>
+                </div>
+                </div>
+              
+             
+
+             <div class="col-md-4 py-3 py-md-0">
+              <div class="card" style="background-color: #a9a9a926;">
+               <img src="m2.jpg" alt="">
+               <div class="card-body">
+                 <h5 class="card-titel">22 July , 2020. Monday</h5>
+                 <p>Men's Fashion Winter Sale</p>
+                 
+               </div>
+         </div>
+         </div>
+         <div class="col-md-4 py-3 py-md-0">
+          <div class="card" style="background-color: #a9a9a926;">
+           <img src="m3.jpg" alt="">
+           <div class="card-body">
+             <h5 class="card-titel">22 July , 2020. Monday</h5>
+             <p>Women Fashion Festive</p>
+            
+           </div>
+     </div>
+     </div>
+    </div>
+
+
+    <!---section  --->
+      <section class="icons-container" style="margin-top: 20px;">
+        <div class="icons" style="padding: 10%;">
+          <i class="fa-solid fa-rocket" style="font-size: 15px; margin-left: 30px;" ></i>
+          <div class="content">
+            <h3>Free Shiping</h3>
+
+          </div>
+        </div>
+        <div class="icons">
+          <i class="fa-solid fa-arrow-rotate-left"  style="font-size: 15px;  margin-left: 40px;"></i>
+          <div class="content">
+            <h3>Free Retrun</h3>
+            
+          </div>
+        </div>
+
+        <div class="icons">
+          <i class="fa-solid fa-lock"  style="font-size: 15px; height: auto;  margin-left: 40px;"></i>
+          <div class="content">
+            <h3>Sucure Payment</h3>
+            
+          </div>
+        </div>
+      </section> 
+
+
+      <!--mail-->
+      <h1 class="text-center">NEWSLETTER</h1>
+      <p id="muzzi">Subscribe to our newsletter and get <span>10 %</span> off your first purchase </p>
+
+      <!--email-->
+
+      <div class="email-box" style="box-sizing: content-box; ">
+        <input class="tbox" type="email" name="value" style="border-radius: 30px; height: 40px;" placeholder="Enter Your Address" >
+        <button class="btn" type="button" name="button" onclick="snitch()" style="border-radius: 20px; box-sizing: content-box; ">Subscribe</button>
+        
+      </div>
+
+      <!--footer-->
+          <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col" id="company">
+                 <!---- img src="k1.png" style="width: 50px ; margin-bottom: 25px;" !---->
+                  <div class="mujji" >I Life Fashion</div>
+                  <p>
+                    Praesent dapibus, neque id cursus ucibus, tortor neque <br>egestas augue, magna eros eu erat. Aliquam erat;<br> volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, <br> facilisis luctus, metus.
+                  </p>
+                  <div class="social">
+                    <a href="#"><i class="fa-brands fa-twitter"></i>
+                      <a href="#"><i class="  fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="  fa-brands fa-instagram"></i></a>
+                   
+                  </div>
+                </div>
+                <div class="col" id="Infromation">
+                  <h3>Information</h3>
+                    <div class="links">
+                      <a href="#">About As</a>
+                      <a href="#">Faq</a>
+                      <a href="#">Teams & Condition</a>
+                      <a href="#">Contact</a>
+                      <a href="#">Help</a>
+
+                    </div>
+                
+                </div>
+                <div class="col" id="Customer Services">
+
+                  <h3>Customer Services</h3>
+                  <div class="links">
+                    <a href="#">Payment Method</a>
+                    <a href="#">Mony-back</a>
+                    <a href="#">Returns</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Privacy policy</a>
+                  </div>
+                </div>
+                <div class="col" id="Get in tuch">
+
+                  <h3>Get In Tuch</h3>
+                  <div class="links">
+                    <a href="#">Thiruchirapalli, Sathiram</a>
+                      <a href="#">Trichy </a>
+                      <a href="#">periyasaami tower</a>
+                      <a href="#">Ilifeacadamy@gamil.com</a>
+                      <a href="#">+9192939495</a>
+                      
+                  </div>
+                </div>
+               
+                
+              </div>
+            </div>
+          </footer>     
+             
+    
+        <!--boostsrap--js-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script>
-            function snitch(){
-                 window.open("C:/Users/mujjamil/OneDrive/Documents/new%20project/ecommerce/index.html","");
-            }
-          </script>
+          function snitch(){
+            window.open("https://wpthemesgrid.com/themes/free/eshop/product-details.html","");
+          }
+        </script>
     </body>
-</html>
+    </html>
