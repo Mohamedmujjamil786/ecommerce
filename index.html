@@ -14,6 +14,7 @@
                 background-color: #646d72;
                 display: flex;
                 font-family: sans-serif;
+                background:url(laptop1.jpg)no-repeat center center;
             }
             .container{
                 margin: auto;
@@ -21,20 +22,28 @@
                 max-width: 90%;
 
             }
+            .user{
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 50px;
+                right:  730px;
+                bottom: 90px;
+            }
             .container form{
                 width: 100%;
                 height: 100%;
-                padding: 20px;
+                padding: 50px;
                 background-color: white;
                 border-radius: 4px;
                 box-shadow: 0 8px 15px rgba(0,0,0,.3);
             }
-            .container form .mujji{
+             .mujji{
                 text-align: center;
-                margin-bottom: 24px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-bottom: 50px;
+                font-family: initial;
                 font-size: 30px;
-                color: #222;
+                color: #896f04;
             }
             .container form .form-control{
                 width: 100%;
@@ -47,7 +56,7 @@
             }
             .container form .btn{
                 width: 80px;
-                margin-left: 190px;
+                margin-left: 150px;
                  border: 1px solid #55557d;
                color: #1c1c50;
             font-weight: bold;
@@ -58,6 +67,14 @@
             }
              .btn :hover{
             color: rgb(202, 120, 13);
+           }
+           @media screen and  (max-width: 424){
+            .btn{
+                width: 100px;
+                height: 4vh;
+
+            }
+            
            }
                 
             /*transform: translateX(-50%);
@@ -82,7 +99,9 @@
     <body>
         <div class="container">
             <form action="">
+                
                 <div class="mujji">Login Page</div>
+                
                 <div class="form-group">
                     <label for="">Email Id</label>
                     <input type="text" class="form-control" required>
@@ -99,7 +118,7 @@
         </div>
         <script>
             function snitch(){
-                 window.open(" file:///C:/Users/mujjamil/OneDrive/Documents/new%20project/ecommerce/lindex.html");
+                 window.open("C:/Users/mujjamil/OneDrive/Documents/new%20project/ecommerce/lindex.html","");
             }
           </script>
     </body>
