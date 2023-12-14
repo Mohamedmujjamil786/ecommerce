@@ -9,29 +9,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!--boostsrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymo">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
              <!--top nav--> 
            <div class="top-navbar">
             <div class="top-icons">
-              <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"data-aos="fade-down"></i>
+                <i class="fa-brands fa-facebook-f"data-aos="fade-down"></i>
+                <i class="fa-brands fa-instagram"data-aos="fade-down"></i>
            
            </div>
           <div class="other-links">
-            <button id="btn-login" style="margin-top: 10px;"><a href="C:/Users/mujjamil/OneDrive/Documents/new%20project/ecommerce/index%20(2).html" >Login</a></button>
-            <button id="btn-signup"><a href="signup-html">Sign up</a></button>
+            <button id="btn-login"data-aos="fade-down" style="margin-top: 10px;"><a href="C:/Users/mujjamil/OneDrive/Documents/new%20project/ecommerce/index.html" >Login</a></button>
+            
+            <button id="btn-signup"data-aos="fade-down"><a href="#">Sign up</a></button>
 
            
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user"data-aos="fade-down"></i>
+            <i class="fa-solid fa-cart-shopping"data-aos="fade-down"></i>
           </div>
           </div>
           <!--navbar boostsrap-->
+          <marquee><div class="collection" style="font-family: fantasy;margin-top: 10px;color: burlywood;font-size: large;">Trending Collection </div></marquee>
           <nav class="navbar navbar-expand-lg" id="nav-bar">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="font-family:inherit; margin-left: 20px; font-size: 30px;" > Noohu Fashion <img src="" alt="" width="70px" ></a>
+           
+            <div class="container-fluid" >
+            <a class="navbar-brand" href="#" style="font-family:inherit; margin-left: 20px; font-size: 30px;" data-aos="zoom-in-left"> Ilife Fashion <img src="" alt="" width="70px" ></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
               </button>
@@ -84,9 +88,12 @@
                 
          <!--navbar-->
         <!---home-->
-            <section class="home" style="background-color: #a9a9a926;">
-              <div class="contact"> 
-               <h3>up to  50% sale 
+            <section class="home" style="background-color: #a9a9a926;"data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"  >
+              
+              <div class="contact"data-aos="zoom-in-down"> 
+               <h3>up to  50% Off
                <br><span>Shirt for men</span>
               </h3>
                 <p>Maboriosam in a nesciung eget magnae
@@ -95,7 +102,7 @@
                   <button id="shopnow">shop now!</button>
                 </div>
                   <div class="img">
-                   <img src="ne3.png" alt="">
+                   <img src="ne3.png" alt="" >
                   </div>
               
                
@@ -104,14 +111,15 @@
                 </div>
                  <!--card-->
                  <div class="container" id="top-cards">
+                  
                   <div class="row">
                     <div class="col-md-4 py-3 py-md-0">
-                         <div class="card" style="background-color: #a9a9a926;">
+                         <div class="card"style="background-color: #a9a9a926;margin-left: 25px;"data-aos="zoom-out">
                           <img src="./img0.png" alt="">
                           <div class="card-img-overlay">
                             <h5 class="card-titel" >Men's Collection </h5>
                             <p>Summer travel collection</p>
-                            <button class="btn" type="button" name="button" onclick="snitch()" >Shop Now</button>
+                            <button class="btn"data-aos="zoom-in-down" type="button" name="button" onclick="snitch()" >Shop Now</button>
                           </div>
                     </div>
                     </div>
@@ -119,22 +127,23 @@
                  
 
                  <div class="col-md-4 py-3 py-md-0">
-                  <div class="card" style="background-color: #a9a9a926;">
+                  <div class="card" style="background-color: #a9a9a926;margin-left: 25px;"data-aos="zoom-out">
                    <img src="./r3.png" alt="">
                    <div class="card-img-overlay">
                      <h5 class="card-titel">Bag collection</h5>
                      <p>Awesome bag</p>
-                     <button class="btn" type="button" name="button" onclick="snitch()" >Shop Now</button>
+                     <button class="btn"data-aos="zoom-in-down" type="button" name="button" onclick="snitch()" >Shop Now</button>
                    </div>
              </div>
              </div>
+  
              <div class="col-md-4 py-3 py-md-0">
-              <div class="card" style="background-color: #a9a9a926;">
+              <div class="card" style="background-color: #a9a9a926;margin-left: 25px;"data-aos="zoom-out">
                <img src="r4.png" alt="">
                <div class="card-img-overlay">
                  <h5 class="card-titel">Flash Sale </h5>
                  <p>Mid Seation Up to 40% Off</p>
-                 <button class="btn" type="button" name="button" onclick="snitch()" >Shop Now</button>
+                 <button class="btn"data-aos="zoom-in-down" type="button" name="button" onclick="snitch()" >Shop Now</button>
                </div>
          </div>
          </div>
@@ -164,10 +173,10 @@
      <div class="contianer" id="product-cards">
       <div class="row" style="margin-top: 30px;">
       <div class="col-md-3 py-2 py-md-0">
-        <div class="card">
+        <div class="card"data-aos="zoom-out">
           <img src="r5.png" alt="">
           <div class="card-body">
-            <h3>ADD TO CART</h3>
+            <h3>ADD TO CARD</h3>
             <div class="star">
               <i class="fa-solid fa-eye"></i>
               <i class="fa-regular fa-heart"></i>
@@ -178,7 +187,7 @@
             </div>
             </div>
             <div class="col-md-3 py-4 py-md-0">
-              <div class="card">
+              <div class="card"data-aos="zoom-out">
                 <img src="r6.png" alt="">
                 <div class="card-body">
                   <h3>ADD TO CART</h3>
@@ -193,7 +202,7 @@
                   </div>
                   </div>
                   <div class="col-md-3 py-3 py-md-0">
-                    <div class="card">
+                    <div class="card"data-aos="zoom-out">
                       <img src="r7.png" alt="">
                       <div class="card-body">
                         <h3>ADD TO CART</h3>
@@ -207,12 +216,12 @@
                         </div>
                         </div>
                         <div class="col-md-3 py-3 py-md-0">
-                          <div class="card">
+                          <div class="card"data-aos="zoom-out">
                             <img src="r8.png" alt="">
                             <div class="card-body">
                               <h3>ADD TO CART</h3>
                               <div class="star">
-                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-eye" ></i>
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-signal"></i>
                               </div>
@@ -227,7 +236,7 @@
           <div class="contianer" id="product-cards">
             <div class="row" style="margin-top: 30px;">
             <div class="col-md-3 py-3 py-md-0">
-              <div class="card">
+              <div class="card"data-aos="zoom-out">
                 <img src="r9.png" alt="">
                 <div class="card-body">
                   <h3>ADD TO CART</h3>
@@ -236,12 +245,12 @@
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-solid fa-signal"></i>
                   </div>
-                  <h5>awesome bag collection</h5>
+                  <h5>awesome bags collections</h5>
                   </div>
                   </div>
                   </div>
                   <div class="col-md-3 py-3 py-md-0">
-                    <div class="card">
+                    <div class="card"data-aos="zoom-out">
                       <img src="r10.png" alt="">
                       <div class="card-body">
                         <h3>ADD TO CART</h3>
@@ -256,7 +265,7 @@
                         </div>
                         </div>
                         <div class="col-md-3 py-3 py-md-0">
-                          <div class="card">
+                          <div class="card"data-aos="zoom-out">
                             <img src="t1.png" alt="">
                             <div class="card-body">
                               <h3>ADD TO CART</h3>
@@ -265,12 +274,12 @@
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-signal"></i>
                               </div>
-                              <h5>Polo dress for Women</h5>
+                              <h5>Polo dres for Women</h5>
                               </div>
                               </div>
                               </div>
                               <div class="col-md-3 py-3 py-md-0">
-                                <div class="card">
+                                <div class="card"data-aos="zoom-out">
                                   <img src="r11.png" alt="">
                                   <div class="card-body">
                                     <h3>ADD TO CART</h3>
@@ -279,7 +288,7 @@
                                       <i class="fa-regular fa-heart"></i>
                                       <i class="fa-solid fa-signal"></i>
                                     </div>
-                                    <h5>black sunglass for women</h5>
+                                    <h5>black sunclass for women</h5>
                                     </div>
                                     </div>
                                     </div>
@@ -299,7 +308,7 @@
                  
                   <h4>Please, purchase full version of the template to get all pages,<br>
                    features and commercial license.</h4>
-                    <div id="bannerbtn"><button>purchase now</button></div>
+                    <div id="bannerbtn" data-aos="zoom-in-down"><button>purchase now</button></div>
               </div>
               
             </div>
@@ -309,44 +318,44 @@
                 <h1 class="text-center">On Sale</h1>
                 <div class="row" style="margin-top: 40px;">
                 <div class="col-md-3 py-2  py-md-0">
-                  <div class="card" >
+                  <div class="card" data-aos="zoom-out">
                     <img src="g1.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;">
                     <div class="card-body" >
                       <h3 class="free" style="font-size: 15px ;">Licity jelly leg flat Sandals</h3>
                      
-                      <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 90px; width: 70px;">$59</button>
+                      <button class="btn" data-aos="zoom-in-down" type="button" name="button" onclick="snitch()" style="margin-left: 90px; width: 70px;">$59</button>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-3 py-3 py-md-0">
                   
-                  <div class="card" >
+                  <div class="card" data-aos="zoom-out" >
                     <img src="rm2.png" alt="" style="height:36vh;width: 200px; margin-left: 30px;">
                     <div class="card-body" >
                      <h3 class="free" style="font-size: 15px ;">Licity jelly leg flat Sandals</h3>
-                     <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
+                     <button class="btn" data-aos="zoom-in-down" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
                     </div>
                   </div>
                 </div>
                 
 
                 <div class="col-md-3 py-3 py-md-0">
-                  <div class="card" >
+                  <div class="card"  data-aos="zoom-out">
                     <img src="rm3.png" alt="" style="height:36vh;width: 200px; margin-left: 30px;">
                     <div class="card-body" >
                        <h3 class="free" style="font-size: 15px ;">Licity jelly leg flat Sandals</h3>
-                       <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
+                       <button class="btn" data-aos="zoom-in-down"  type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-3 py-3 py-md-0">
-                  <div class="card" >
-                    <img src="rm4.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;" >
+                  <div class="card"  data-aos="zoom-out">
+                    <img src="rm4.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;">
                     <div class="card-body">
                        <h3 class="free" style="font-size:15px ;">Licity jelly leg flat Sandals</h3>
-                       <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
+                       <button class="btn" data-aos="zoom-in-down" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
                     </div>
                   </div>
                 </div>
@@ -362,41 +371,41 @@
                <div class="container" id="product-cards">
                 <div class="row" style="margin-top: 40px;">
                 <div class="col-md-3 py-3 py-md-0">
-                  <div class="card" >
+                  <div class="card"  data-aos="zoom-out">
                     <img src="rp1.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;">
                     <div class="card-body">
                        <h3 class="free" style="font-size:15px ;">Licity jelly leg flat Sandals</h3>
-                       <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
+                       <button class="btn" data-aos="zoom-in-down" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-3 py-3 py-md-0">
-                  <div class="card" >
+                  <div class="card"  data-aos="zoom-out">
                     <img src="rp2.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;">
                     <div class="card-body">
                    <h3 class="free" style="font-size: 15px ;">Licity jelly leg flat Sandals</h3>
-                   <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
+                   <button class="btn"data-aos="zoom-in-down"  type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-3 py-3 py-md-0">
-                  <div class="card" >
+                  <div class="card" data-aos="zoom-out" >
                     <img src="rp3.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;">
                     <div class="card-body">
                        <h3 class="free" style="font-size: 15px ;">Licity jelly leg flat Sandals</h3>
-                       <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
+                       <button class="btn"data-aos="zoom-in-down"  type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-3 py-3 py-md-0">
-                  <div class="card" >
-                    <img src="rp4.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;"  >
+                  <div class="card"  data-aos="zoom-out" >
+                    <img src="rp4.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;">
                     <div class="card-body">
                        <h3 class="free" style="font-size: 15px ;">Licity jelly leg flat Sandals</h3>
-                       <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
+                       <button class="btn" data-aos="zoom-in-down" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
                     </div>
                   </div>
                 </div>
@@ -410,41 +419,41 @@
            <div class="container" id="product- cards">
             <div class="row" style="margin-top: 40px;">
             <div class="col-md-3 py-3 py-md-0">
-              <div class="card" >
+              <div class="card"  data-aos="zoom-out">
                 <img src="ry1.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;">
                 <div class="card-body">
                   <h3 class="free" style="font-size: 15px;">Licity jelly leg flat Sandals</h3>
-                  <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
+                  <button class="btn" data-aos="zoom-in-down"  type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
                 </div>
               </div>
             </div>
 
             <div class="col-md-3 py-3 py-md-0">
-              <div class="card" >
+              <div class="card"  data-aos="zoom-out">
                 <img src="ry2.png" alt="" style="height:36vh;width: 200px; margin-left: 30px;">
                 <div class="card-body">
                   <h3 class="free" style="font-size: 15px;">Licity jelly leg flat Sandals</h3>
-                  <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
+                  <button class="btn"data-aos="zoom-in-down"  type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
                 </div>
               </div>
             </div>
 
             <div class="col-md-3 py-4 py-md-0">
-              <div class="card" >
+              <div class="card"  data-aos="zoom-out">
                 <img src="ry3.png" alt=""style="height:36vh;width: 200px; margin-left: 30px;">
                 <div class="card-body">
                   <h3 class="free" style="font-size: 15px;">Licity jelly leg flat Sandals</h3>
-                  <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
+                  <button class="btn"data-aos="zoom-in-down"  type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
                 </div>
               </div>
             </div>
 
             <div class="col-md-3 py-3 py-md-0">
-              <div class="card" >
-                <img src="ry4.png" alt="" style="height:36vh;width: 200px; margin-left: 30px;" >
+              <div class="card"  data-aos="zoom-out" >
+                <img src="ry4.png" alt="" style="height:36vh;width: 200px; margin-left: 30px;">
                 <div class="card-body">
                   <h3 class="free" style="font-size: 15px;">Licity jelly leg flat Sandals</h3>
-                  <button class="btn" type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
+                  <button class="btn"data-aos="zoom-in-down"  type="button" name="button" onclick="snitch()" style="margin-left: 90px;width: 70px;">$59</button>
                 </div>
               </div>
             </div>
@@ -458,8 +467,8 @@
             <div class="container" id="top-cards" >
               <div class="row">
                 <div class="col-md-4 py-3 py-md-0">
-                     <div class="card" style="background-color: #a9a9a926;">
-                      <img src="m1.jpg" alt="">
+                     <div class="card" style="background-color: #a9a9a926;" data-aos="zoom-out">
+                      <img src="m1.jpg" >
                       <div class="card-body">
                         <h5 class="card-titel">22 July , 2020. Monday</h5>
                         <p>Summer travel collection</p>
@@ -471,8 +480,8 @@
              
 
              <div class="col-md-4 py-3 py-md-0">
-              <div class="card" style="background-color: #a9a9a926;">
-               <img src="m2.jpg" alt="">
+              <div class="card" style="background-color: #a9a9a926;" data-aos="zoom-out">
+               <img src="m2.jpg" >
                <div class="card-body">
                  <h5 class="card-titel">22 July , 2020. Monday</h5>
                  <p>Men's Fashion Winter Sale</p>
@@ -481,8 +490,8 @@
          </div>
          </div>
          <div class="col-md-4 py-3 py-md-0">
-          <div class="card" style="background-color: #a9a9a926;">
-           <img src="m3.jpg" alt="">
+          <div class="card" style="background-color: #a9a9a926;" data-aos="zoom-out">
+           <img src="m3.jpg" >
            <div class="card-body">
              <h5 class="card-titel">22 July , 2020. Monday</h5>
              <p>Women Fashion Festive</p>
@@ -496,14 +505,14 @@
     <!---section  --->
       <section class="icons-container" style="margin-top: 50px;">
         <div class="icons" style="margin-right: auto; ;">
-          <i class="fa-solid fa-rocket" style="font-size: 15px; margin-left: 40px ; " ></i>
+          <i class="fa-solid fa-rocket"data-aos="fade-down" style="font-size: 15px; margin-left: 40px ; " ></i>
           <div class="content" style="margin-left: 10px;">
             <h3>Free Shiping</h3>
 
           </div>
         </div>
         <div class="icons">
-          <i class="fa-solid fa-arrow-rotate-left"  style="font-size: 15px;  margin-left: 40px;"></i>
+          <i class="fa-solid fa-arrow-rotate-left"data-aos="fade-down"  style="font-size: 15px;  margin-left: 40px;"></i>
           <div class="content" style="margin-left: 10px;">
             <h3>Free Retrun</h3>
             
@@ -511,7 +520,7 @@
         </div>
 
         <div class="icons">
-          <i class="fa-solid fa-lock"  style="font-size: 15px; height: auto;  margin-left: 40px;"></i>
+          <i class="fa-solid fa-lock" data-aos="fade-down" style="font-size: 15px; height: auto;  margin-left: 40px;"></i>
           <div class="content" style="margin-left: 10px;">
             <h3>Sucure Payment</h3>
             
@@ -534,7 +543,7 @@
 
       <!--footer-->
           <footer>
-            <div class="container">
+            <div class="container"data-aos="flip-left">
               <div class="row">
                 <div class="col" id="company">
                  <!---- img src="k1.png" style="width: 50px ; margin-bottom: 25px;" !---->
@@ -543,13 +552,13 @@
                     Praesent dapibus, neque id cursus ucibus, tortor neque <br>egestas augue, magna eros eu erat. Aliquam erat;<br> volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, <br> facilisis luctus, metus.
                   </p>
                   <div class="social">
-                    <a href="#"><i class="fa-brands fa-twitter"></i>
-                      <a href="#"><i class="  fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="  fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"data-aos="fade-down"></i>
+                      <a href="#"><i class="  fa-brands fa-facebook-f"data-aos="fade-down"></i></a>
+                        <a href="#"><i class="  fa-brands fa-instagram"data-aos="fade-down"></i></a>
                    
                   </div>
                 </div>
-                <div class="col" id="Infromation">
+                <div class="col" id="Infromation"data-aos="flip-left">
                   <h3>Information</h3>
                     <div class="links">
                       <a href="#">About As</a>
@@ -561,7 +570,7 @@
                     </div>
                 
                 </div>
-                <div class="col" id="Customer Services">
+                <div class="col" id="Customer Services"data-aos="flip-left">
 
                   <h3>Customer Services</h3>
                   <div class="links">
@@ -572,7 +581,7 @@
                     <a href="#">Privacy policy</a>
                   </div>
                 </div>
-                <div class="col" id="Get in tuch">
+                <div class="col" id="Get in tuch"data-aos="flip-left">
 
                   <h3>Get In Tuch</h3>
                   <div class="links">
@@ -595,8 +604,14 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script>
           function snitch(){
-            window.open("https://mohamedmujjamil786.github.io/ecommerce/loading.html","");
+            window.open(" C:/Users/mujjamil/OneDrive/Documents/new%20project/ecommerce/loading.html","");
+            
           }
+         
         </script>
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+           AOS.init();
+         </script>
     </body>
     </html>
