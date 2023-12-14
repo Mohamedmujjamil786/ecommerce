@@ -189,12 +189,12 @@
      font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .home .img{
-    flex: 1  500px;
+    flex: 1.5  400px;
 }
 .home .img img{
-    width: 40%;
-    height: 45vh;
-    margin-top: 5px;
+    width: 35%;
+    height: 55vh;
+    margin-top: 9px;
 
 }
 .home .contact{
@@ -236,14 +236,14 @@
     color: white;
     border-radius: 20px;
 }
-@media screen and (max-width:570px){
+@media screen and (max-width:397px){
     .home img{
-        margin-left: 60px;
-        height: 40vh;
-        margin-top: 10px;
+        margin-left: 50px;
+        height: 30vh;
+        margin-top: 2px;
     }
     .container .card-body{
-        margin-left: 60px;
+        margin-left: 50px;
     }
     .img{
         margin-left: 40px;
@@ -268,7 +268,7 @@
 
 @media screen and (max-width:400px){
     .home img{
-        margin-left: 60px;
+        margin-left: 70px;
         height: 30vh;
         margin-top: 20px;
     }
